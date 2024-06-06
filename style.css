@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('img/agadir.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.slider{
+    height: 80vh;
+    width: 70vw;
+    position: relative;
+    background-image: url('img/agadir.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.btn{
+    position: absolute;
+    aspect-ratio: 1/1;
+    width: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: white;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.btn:hover{
+    transform: translateY(-50%) scale(1.05);
+}
+.btn1{
+    left: -25px;
+}
+
+.btn2{
+    right: -25px;
+}
